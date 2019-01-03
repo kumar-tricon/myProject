@@ -2,13 +2,16 @@
   "name": "myproject",
   "version": "1.0.0",
   "description": "KAUST",
-  "scripts": {
-  },
-  "repository": {
-  },
+  "scripts": {},
+  "repository": {},
   "author": "",
   "license": "ISC",
-  "bugs": {
+  "bugs": {},
+  "dependencies": {
+    "grunt": "^1.0.3",
+    "grunt-jsdoc": "^2.3.0"
   },
-  "homepage": ""
+  "devDependencies": {
+    "grunt-contrib-clean": "^2.0.0"
+  }
 }

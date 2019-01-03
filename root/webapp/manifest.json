@@ -1,75 +1,75 @@
 {
-    "_version": "1.0.0",
-    "sap.app": {
-      "id": "KAUST",
-      "type": "application",
-      "i18n": "i18n/i18n.properties",
-      "title": "{{appTitle}}",
-      "description": "{{appDescription}}",
-      "applicationVersion": {
-        "version": "1.0.0"
+  "_version": "1.0.0",
+  "sap.app": {
+    "id": "KAUST",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "root.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    },
+    "dependencies": {
+      "minUI5Version": "1.30",
+      "libs": {
+        "sap.m": {}
       }
     },
-    "sap.ui": {
-      "technology": "UI5",
-      "deviceTypes": {
-          "desktop": true,
-          "tablet": true,
-          "phone": true
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "root.i18n.i18n"
+        }
       }
     },
-    "sap.ui5": {
-      "rootView": {
-          "viewName": "root.view.App",
-          "type": "XML",
-          "async": true,
-          "id": "app"
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "JS",
+        "viewPath": "root.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "async": true
       },
-      "dependencies": {
-        "minUI5Version": "1.30",
-        "libs": {
-          "sap.m": {}
-        }
-      },
-      "models": {
-        "i18n": {
-          "type": "sap.ui.model.resource.ResourceModel",
-          "settings": {
-            "bundleName": "root.i18n.i18n"
-          }
-        }
-      },
-      "routing": {
-        "config": {
-          "routerClass": "sap.m.routing.Router",
-          "viewType": "JS",
-          "viewPath": "root.view",
-          "controlId": "app",
-          "controlAggregation": "pages",
-          "async": true
+      "routes": [
+        {
+          "pattern": "",
+          "name": "p1",
+          "target": "p1"
         },
-        "routes": [
-          {
-            "pattern": "",
-            "name": "p1",
-            "target": "p1"
-          },
-          {
-            "pattern": "p2",
-            "name": "p2",
-            "target": "p2"
-          }
-        ],
-        "targets": {
-          "p1": {
-            "viewID": "p1",
-            "viewName": "p1"
-          },
-          "p2": {
-            "viewId": "p2",
-            "viewName": "p2"
-          }
+        {
+          "pattern": "p2",
+          "name": "p2",
+          "target": "p2"
+        }
+      ],
+      "targets": {
+        "p1": {
+          "viewID": "p1",
+          "viewName": "p1"
+        },
+        "p2": {
+          "viewId": "p2",
+          "viewName": "p2"
         }
       }
     }
   }
+}
