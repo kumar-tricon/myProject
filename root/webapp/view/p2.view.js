@@ -6,7 +6,7 @@ sap.ui.jsview("root.view.p2", {
 
 	createContent : function(oController) {
 		this.setDisplayBlock(true);
-	    return sap.m.Text({text:"page 2"});
+	    return new sap.m.Text({text:"page 2"});
 	}
 
 });

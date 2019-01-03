@@ -57,12 +57,12 @@
 			</Button>
 		</HBox>
       <!-- To be removed -->
-		<!-- <NavContainer
-			id="navCon"
+		<NavContainer
+			id="app"
 			width="98%"
 			height="16em"
 			class="navContainerControl sapUiSmallMarginBottom">
-			<Page
+			<!-- <Page
 				id="p1"
 				title="Page 1" >
 				<Text text="page 1"/>
@@ -81,8 +81,8 @@
 				id="p4"
 				title="Page 4" >
 				<Text text="page 4"/>
-			</Page>
-		</NavContainer> -->
+			</Page> -->
+		</NavContainer>
 
 	
 

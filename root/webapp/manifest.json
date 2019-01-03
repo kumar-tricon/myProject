@@ -50,7 +50,7 @@
         },
         "routes": [
           {
-            "pattern": "p1",
+            "pattern": "",
             "name": "p1",
             "target": "p1"
           },
