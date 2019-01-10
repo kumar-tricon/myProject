@@ -7,11 +7,11 @@
   "author": "",
   "license": "ISC",
   "bugs": {},
-  "dependencies": {
-    "grunt": "^1.0.3",
-    "grunt-jsdoc": "^2.3.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "grunt-contrib-clean": "^2.0.0"
+    "grunt": "^1.0.3",
+    "grunt-jsdoc": "^2.3.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.0"
   }
 }
